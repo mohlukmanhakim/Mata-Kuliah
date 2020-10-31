@@ -1,0 +1,24 @@
+menghitung luas permukaan tabung
+<?php
+$r=;
+
+$luas=(2*(3.14*r*r))+((2*3.14*r)*t);
+
+echo $luas
+
+?>
+
+#include <iostream>
+using namespace std;
+in main() {
+float r;
+int hasil;
+
+cout <<"masukkan jari -jari : "<<r<<endl;
+
+luas=(2*(3.14*r*r))+((2*3.14*r)*t);
+
+cout <<luas;
+
+return 0
+}

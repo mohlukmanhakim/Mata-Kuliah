@@ -1,0 +1,41 @@
+soal buat lah algoritma mencari luas dan keliling persegi panjang
+<?php
+$p=5;
+$l=3;
+$pilihan=1;
+
+if (pilihan==1){
+$hasil=$panjang*$lebar;
+}else{
+$hasil=2*($panjang+$lebar);
+}
+echo $hasil;
+
+?>
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+float pilihan,panjang,lebar;
+int hasil;
+
+cout <<"masukkan pilihan"<<endl;
+cout <<"1. luas"<<endl;
+cout <<"2. keliling"<<endl;
+cin >>pilihan;
+cout <<"masukkan panjang : "<<panjang<<endl;
+cout <<"masukkan lebar : "<<lebar<<endl;
+
+if (pilihan==1){
+hasil=panjang *lebar;
+}else{
+hasil=2*(panjang+lebar);
+}
+
+cout <<hasil;
+
+return 0;
+}
