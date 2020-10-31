@@ -1,0 +1,29 @@
+# Project: Project7
+# Makefile created by Dev-C++ 5.2.0.0
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = 7.o $(RES)
+LINKOBJ  = 7.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -static-libstdc++ -static-libgcc  
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" 
+BIN      = Project7.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Project7.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Project7.exe" $(LIBS)
+
+7.o: 7.cpp
+	$(CPP) -c 7.cpp -o 7.o $(CXXFLAGS)
