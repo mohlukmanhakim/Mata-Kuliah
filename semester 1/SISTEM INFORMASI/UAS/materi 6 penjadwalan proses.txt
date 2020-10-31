@@ -1,0 +1,36 @@
+penjadwalan proses
+merupakan basis sistem operasi multiprogramming. 
+
+Penjadwalan bertugas memutuskan hal-hal berikut :
+Proses yang harus berjalan
+Kapan dan selama berapa lama proses berjalan
+---
+Sasaran utama penjadwalan proses
+>Optimasi kinerja sistem komputer menurut kriteria tertentu.
+>Kinerja untuk mengukur dan optimasi kinerja penjadwalan :
+Adil (fairness)
+Efisiensi
+Waktu tanggap (response time)
+Turn arround time
+Throughput
+---
+tipe-tipe penjadwalan :
+Penjadwalan jangka pendek
+Penjadwalan jangka menengah
+Penjadwalan jangka panjang
+
+penjelasan :
+>Penjadwal jangka pendek 
+bertugas menjadwalkan alokasi pemoses di antara proses-proses Ready yang berada di memori utama.
+Sasaran utama : memaksimumkan kinerja sistem untuk memenuhi satu kumpulan kriteria yang diharapkan. 
+dijalankan setiap terjadi pengalihan proses untuk memilih proses berikutnya yang harus dijalankan
+
+>Penjadwal jangka menengah 
+menangani proses-proses swapping. Proses – proses yang mempunyai kepentingan kecil saat itu adalah proses yang tertunda.
+Penjadwal jangka menengah mengendalikan transisi dari suspended ke ready (dari proses yang mengalami swapping)
+
+>Penjadwal jangka panjang 
+bekerja terhadap antrian batch dan memilih batch berikutnya yang harus di eksekusi sistem.
+Batch biasanya berupa proses-proses dengan penggunaan sumber daya yang intensif, program-program ini mempunyai prioritas yang rendah dan biasa digunakan sebagai pengisi selama periode aktivitas proses-proses interaktif rendah.
+
+

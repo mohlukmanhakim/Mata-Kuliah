@@ -1,0 +1,25 @@
+strategi penjadwalan
+
+Terdapat 2 strategi penjadwalan yaitu
+Penjadwalan non preemptive (run to completion)
+Penjadwalan preemptive
+---
+penjelasan :
+>Penjadwalan non preemptive (run to completion)
+Begitu proses diberi jatah layanan pemroses tidak dapat diambil alih oleh proses lain sampai proses itu selesai.
+disebut run to completion karena proses yang telah dijadwalkan akan dijalankan sampai selesainya atau proses tersebut meminta layanan masukan/keluaran.
+
+>Penjadwalan preemptive
+Saat proses diberi jatah layanan pemroses dapat diambil alih proses lain yang mempunyai prioritas lebih tinggi berdasarkan kriteria sistem itu
+---
+Algoritma yang menerapkan strategi nonpreemptive :
+FIFO (first in first out) atau FCFS (first come first serve)
+SJF (shortest job first)
+HRN (highest ratio next)
+
+Algoritma yang menerapkan strategi preemptive :
+RR (round robin)
+MFQ (multiple feedback queues)
+SRF (shortest ratio first)
+PS (priority schedulling)
+GS (guaranteed schedulling)

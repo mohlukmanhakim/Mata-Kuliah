@@ -1,0 +1,68 @@
+fungsi dasar sistem komputer
+
+>sistem operasi berfungsi untuk mengatur dan mengawasi penggunaan perangkat keras oleh berbagai program aplikasi serta para pengguna.
+>Sistem operasi merupakan sebuah penghubung antara pengguna dari komputer dengan perangkat keras komputer. 
+
+Sistem operasi mempuyai tiga sasaran utama yaitu :
+>Kenyamanan 
+>efisiensi
+>berevolusi
+
+peranan sistem operasi :
+------------------------------------------------------------------
+>Bertindak sebagai “Pemerintah”
+>>Mempengaruhi penggunaan komponen sistem komputer yang tepat: 
+>>h/w, s/w dan data
+------------------------------------------------------------------
+Dipandang sebagai “resource allocator”
+>>Manajer dari resource : CPU time, memory space, file storage I/O device, dll
+>>Memberi resource bagi program tertentu dan user sesuai dengan kebutuhan
+>>Menentukan permintaan yang diberikan resource sehingga sistem komputer berjalan efisien dan fair
+-----------------------------------------------------------------
+Dipandang sebagai “control program”
+>>Mengontrol perangkat I/O dan program user yang berbeda
+>>Mengontrol eksekusi program user untuk mencegah error dan penggunaan komputer yang tidak tepat
+-----------------------------------------------------------------
+Sebagai Extended Machine (Virtual Machine)
+>>Menyembunyikan kompleksitas pemrograman hardware dari programmer atau user.
+>>Menyajikan fasilitas yang lebih mudah dan sederhana untuk menggunakan hardware.
+-----------------------------------------------------------------
+Sebagai Resource Manager
+>>Mengatur dan mengefisienkan penggunaan sumber daya komputer (computer resources)
+>>Tugas utamanya 
+--memantau penggunaan semua resources
+--menerapkan aturan (policy)
+--mengalokasikan resources yang diminta
+--mengambil kembali (dealokasi) resource
+
+
+Kategori Sistem Operasi
+>Single User – Single Tasking (SU-ST)
+contoh :
+DOS (Disk Operating System)
+MS-DOS (Microsoft DOS – IBM Compatible)
+PC-DOS (Personal Computer DOS – IBM)
+DR-DOS (Digital Research DOS-Novell)
+
+>Multi User – Single Tasking (MU-ST)
+Contoh :
+Novell Netware (3.x, 4.x)
+
+>Single User – Multi Tasking (SU-MT)
+Tampilan desktop GUI
+Contoh :
+Windows
+MacOS
+Linux
+Java Desktop System
+Symbian
+Palm OS
+dll
+
+>Multi User – Multi Tasking (MU-MT)
+Contoh :
+Unix
+Linux
+FreeBSD
+Sun Solaris
+

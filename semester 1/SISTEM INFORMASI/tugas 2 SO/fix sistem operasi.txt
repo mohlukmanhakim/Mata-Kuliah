@@ -1,0 +1,16 @@
+nama autor		: Gortap Lumbantoruan
+afiliansi		: Jurnal ISD
+ISSN		: 2528-5114 
+Vol.No terbit 	: Vol.2  No.2  Juli - Desember 2016 
+nama jurnal		: Universitas Methodist Indonesia 
+
+PENGERTIAN
+	Sistem operasi adalah software yang menangani hardware komputer dan menyediakan sumber daya kepada program yang akan beroperasi Dan juga sebagai penghubung antara user dengan sistem komputer. tujuan dijalankannya sistem operasi adalah efisiensi penggunaan waktu ketika terjadi multiprogramming. Karena banyaknya jumlah proses yang akan dieksekusi oleh CPU oleh karena itu sistem operasi harus membagi waktu CPU untuk mengeksekusi sejumlah proses tersebut dengan mengatur penjadwalan eksekusi untuk masing-masing proses. Penjadwalan CPU mengacu pada aturan dan mekanisme untuk mengontrol urutan pekerjaan yang harus dilakukan oleh CPU. Hal ini dibuat oleh bagian dari 
+sistem operasi yang disebut scheduler, dengan menggunakan algoritma penjadwalan.
+	Solusi peningkatan kinerja algoritma Round Robin dengan pengurutan proses dan penetuan quantum time yang dinamis dan diharapkan dapat memperkecil averange waiting time dan averange turnaround time dan proses yang terdapat pada antrian. 
+
+HASIL
+Pengujian dilakukan dengan menggunakan algoritma penjadwalan round robin klasik dan menggunakan algoritma penjadwalan round robin yang dimodifikasi dengan menggunakan quantum time yang dinamis dari hasil rata-rata burst time seluruh proses yang akan dilayani CPU. hasilnya dengan menggunakan algoritma penjadwalan round robin yang dimodifikasi berhasil menurunkan waiting time dan turnaround time.
+ 
+KESIMPULAN
+untuk meningkatkan performa CPU dengan memperkecil waiting time dan turnaround time dilakukan modifikasi terhadap algoritma Round Robin dengan menggunakan dynamic quantum time serta sorting proses secara ascending. Dilakukan pengujian terhadap antrian  proses yang memiliki burst time yang lebih kecil akan dilayani terlebih dahulu sehingga memperkecil context switching yang dapat mengurangi overhead pada CPU dan hasilnya proses-proses yang mengantri dapat diselesaikan dengan menggunakan waktu lebih sedikit dengan menggunakan algoritma Round Robin yang dimodifikasi ini didapat average waiting time dan average turnaround time yang lebih kecil dibandingkan dengan Round Robin yang menggunakan quantum time statis.

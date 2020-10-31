@@ -1,0 +1,52 @@
+struktur sistem operasi
+
+tidak semua sistem operasi mpy struktur yang sama.
+Namun menurut Avi Silberschatz, Peter Galvinm dan Greg Gagne, umumnya sebuah sistem operasi modern mempunyai komponen sebagai berikut :
+>Manajemen proses
+>Manajemen memori utama
+>Manajemen secondary storage
+>Manajemen sistem I/O
+>Manajemen berkas
+>Sistem proteksi
+>Jaringan 
+>Command intepreter system
+
+manajemen proses
+ proses adalah suatu keadaan dimna sebuah program sedang di eksekusi.
+ sebuah proses membutuhkan sumber daya u/ menyelesaikan tugasnya :
+>CPU time, 
+>memori, 
+>berkas-berkas, dan 
+>perangkat-perangkat I/O.
+
+ berikut adalah tanggung jawab atas aktivitas2 yang berkaitan dengan manajemen proses :
+>Pembuatan dan penghapusan proses pengguna dan sistem proses
+>Menunda atau melanjutkan proses
+>Menyediakan mekanisme untuk proses sinkronisasi
+>Menyediakan mekanisme untuk proses komunikasi
+>Menyediakan mekanisme untuk penanganan deadlock (proses yang tidak bisa berjalan)
+
+berikut istilah berkaitan dengan proses :
+>Multiprogramming (multitasking)
+>Multiprocessing
+>Distributed processing / computing
+
+___________________penjelasan________________________
+>Multiprogramming (multitasking) adalah manajemen banyak proses di satu pemroses.
+workstation adalah sistem pemroses tunggal yang menjalankan sistem operasi multiprogramming (multitasking).contohnya :
+MS-Windows 98,
+MS-Windows NT, 
+MS-Windows XP dan 
+machintosh system 7
+------
+>Multiprocessing adalah manajemen banyak proses di komputer multiprocessor (banyak proses di dalamnya).
+Multiprocessor dimaksudkan untuk peningkatan kinerja dan dapat memberikan kemampuan fault tolerant
+contohnya :
+Window NT, 
+UNIX, 
+Linux
+-----
+>Distributed processing adalah manajemen banyak proses yang dieksekusi di banyak sistem komputer yang tersebar (terdistribusi) di satu jaringan.
+
+
+

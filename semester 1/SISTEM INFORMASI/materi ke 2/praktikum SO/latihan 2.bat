@@ -1,0 +1,1 @@
+copy "C:\Users\USER\Pictures\GIF\recovery.jpg" "D:\praktikum SO\sistem"

@@ -1,0 +1,9 @@
+layanan yg di berikan oleh  SO
+>Pembuatan program
+OS menyediakan berbagai fasilitas dan layanan bagi programmer. Berbentuk program utilitas.
+>Eksekusi program
+Sejumlah tugas perlu dilakukan untuk mengeksekusi program. OS menangani semua ini utkpemakai/ pemrogram.
+>Pengaksesan perangkat I/O
+OS mengambil alih detil rincian pengaksesan perangkat I/O
+>Pengaksesan terkendali terhadap file
+OS menyediakan mekanisme proteksi untuk mengendalikan pengaksesan thd file (secarabersama-sama)

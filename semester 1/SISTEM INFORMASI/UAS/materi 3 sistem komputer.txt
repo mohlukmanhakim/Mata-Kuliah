@@ -1,0 +1,23 @@
+sistem komputer
+
+ Empat komponen pokok di sistem komputer adalah : 
+? Pemroses 
+? Memori utama 
+? Perangkat masukan dan keluaran 
+? Interkoneksi antar komponen
+
+1. ? Piranti pemroses atau CPU (Central Processing Unit)
+adalah piranti yang bertugas memproses masukan yang diterima oleh komputer.
+- processor merupakan nama singkat dari microprocessor berupa chip (IC/ Intregated Circuit) yang berarti sekeping silikon yang berukuran kecil persegi yang mengandung puluhan ribu transistor dan komponen elektrik lainnya.
+-Processor sering disebut sebagai otak komputer karena sebagai pemroses data.
+
+> Motherboard 
+sering di sebut : sistem board, main board dan plannar.
+> Catu Daya  (power supply) 
+berfungsi sebagai pemasok listrik dalam rangkaian komputer.
+inputnya =berupa arus listrik bolak-balik (AC)
+selanjutnya catu daya mengonversi arus bolak-balik menjadi arus searah (DC)
+(digunakan oleh komponen-komponen dalam komputer)
+
+2. ? Memory adalah ruang simpan sementara dalam chip komputer.
+main memory (penyimpan memory utama) dan backing storage (penyimpan cadangan).

@@ -1,0 +1,18 @@
+manajemen  memori utama
+
+ memori utama/ memori adalah sebuah array yang besar dari word atau byte,
+-Setiap word atau byte mempunyai alamat tersendiri.
+-ukurannya mencapai ratusan, ribuan atau bahkan jutaan.
+-berfungsi sebagai tempat penyimpanan yang akses datanya digunakan oleh CPU atau -perangkat I/O. 
+-termasuk penyimpanan data yang sementara (volatile), artinya yang dapat hilang begitu sistem dimatikan.
+---
+Manajemen memori berdasarkan keberadaan swapping atau paging
+Manajemen tanpa swapping atau paging
+Manajemen dengan swapping atau paging
+
+penjelasan :
+>manajemen tapa swapping atau paging:
+Merupakan manajemen memori tanpa pemindahan citra proses antara memori utama dan disk selama eksekusi
+Terdiri dari:
+Monoprogramming
+Multiprogramming dengan pemartisian statis
