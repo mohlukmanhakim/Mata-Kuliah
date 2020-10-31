@@ -1,0 +1,14 @@
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\bin\Debug\PencarianBarang.exe.config
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\bin\Debug\PencarianBarang.exe
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\bin\Debug\PencarianBarang.pdb
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\bin\Debug\PencarianBarang.xml
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.FormLogin.resources
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.FormMenuUtama.resources
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.Resources.resources
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.vbproj.GenerateResource.Cache
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.exe
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.xml
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.pdb
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.FormUnggah.resources
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.FormLihat.resources
+D:\AppProject\VBNET 6 siap UAS bag. Materi\PencarianBarang\PencarianBarang\obj\Debug\PencarianBarang.FormDaftar.resources
