@@ -1,0 +1,123 @@
+ALgoritma
+adalah logika, metode, dan tahapan sistematis untuk memecahkan suatu permasalahan.
+syarat yang harus dimiliki algoritma :
+1. general, algoritma yang dibuat harus bersifat umum, tidak bersifat khusus
+2. finiteness, harus mempunyai akhir
+3. efisien, setiap satu permasalahan yang ada harus ditemukan kemungkinan solusi, di pilih yang paling efisien
+
+menilai sebuah algoritma :
+masalah > metode - metode > solusi
+
+syarat algoritma yang baik :
+1. tingkat kepercayaannya tinggi (reability), hasil yang diperoleh dari proses harus berakurasi tinggi dan benar
+2. pemrosesan yang efisien (cost rendah), proses hasu diselesaikan secepat mungkin dan frekuensi kalkulasi yang sependek mungkin
+3. sifatnya general,bukan menyelsaikan satu kasus saja, tetapi kasus lainnya yang lebih general.
+4. mudah dikembangkan 
+5. mudah dimengerti
+6. portabilitas yang tinggi, mudah di implementasikan
+
+notasi algoritmik
+bukan bahasa pemrograman, hal yang terpenting adalah mudah di baca dan dimengerti
+meliputi:
+> kalimat deskriptif
+baca, hitung, bagi, dan kondisi dinyatakan jika...maka...
+> pseudo-code
+notasi yang mirip dengan bahasa tingkat tinggi, khusus bahasa C dan Pascal
+>flowchart
+bagan air 
+
+operator
+>operator pengerjaan
+sama dengan(=), memberikan pemberian atau penugasa
+hanya bilangan bulat dan pecahan
+contoh,
+n = 10, artinya nilai 10 diberikan kepada variabel n
+c=b=a. hasil b dan c akan bernilai a
+a=b=c, hasil a dan b akan bernilai c
+>operator aritmatika
+hanya dikenakan pada operator yang bertipe bilangan yaitu bilangan bulat atau pecahan (real)
+ operator binary
+operator	keterangan			contoh
+ *	perkalian			2*3
+ /	pembagian		2/3
+ %	modulus/sisa pembagian	3%2
+ +	penjumlahan		2+3
+ -	pengurangan		2-3
+ operator unary
+operator	keterangan			+4
++	tanda Plus			-5
+-	tanda minus
+++	prefix: preicrement; postfix: postincrement			++n,n++
+--	prefix: predecrement; postfix: postdecrement
+	-n,n-
+buatlah flowchart untuk menghitung luas 
+segitiga
+lingkaran
+persegi
+
+<?php
+$a=2;
+$t=5;
+$r=3;
+$s=4;
+$kondisi="persegi";
+
+if ($kondisi=="segitiga") {
+	$luas = $a*$t;
+}elseif ($kondisi=="lingkaran") {
+	$luas = 3.14*$r*$r;
+}else{
+	$luas = $s*$s;
+}
+echo $luas;
+?>
+
+runtutan 
+berarti:
+1. tiap instruksi dikerjakan satu persatu
+2. tiap intruksi dilakukan hanya sekalu, tidak ada intruksi yang diulang
+3. intruksi yang dilaksanakan pemproses sama dengan intruksi yang tertulis di dalam teks algoritmanya
+4. akhir dari intruksi terakhir merupakan akhir dari sebuah algoritma
+ flowchart ganjil genap
+<?php
+$n=0;
+$h=$n%2;
+
+if ($h==0){
+	echo "genap";
+}else{
+	echo "ganjil";
+}
+?>
+
+
+pemilihan
+program yang hanya berisi runtutan instruksi yang hanya bisa dikerjakan jika ia memenuhi sebuah persyaratan tertentu yang harus di penuhi.
+
+<?php
+$n=-4;
+$h=$n%2;
+
+if ($h==0){
+	echo "genap positif";
+}elseif ($h==-0){  "masih salah dari modulus (-) genap"
+	echo "genap negatif";
+}elseif ($h==-1){
+	echo "ganjil negatif";
+}else{
+	echo "ganjil positif";
+}
+?>
+
+counter
+bentuk algoritma yang berfungsi untuk melakukan perhitungan angka secara berurutan. baik itu perhitungan maju (mulai angka kecil ke lebih besar) ataupun mundur.
+
+buatlah flowchart untuk conter maju dan counter mundur
+
+
+
+
+`pemanggilan:
+ localhost:8080/(nama file).php
+`penyimpanan:
+drive c>xampp>htdoc

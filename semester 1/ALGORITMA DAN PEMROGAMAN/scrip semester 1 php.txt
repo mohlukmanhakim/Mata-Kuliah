@@ -1,0 +1,155 @@
+//buatlah luas persegi panjang
+<?php
+$panjang=5;
+$lebar=3;
+
+$luas =$panjang*$lebar;
+
+echo $luas;
+
+?>
+."<br>";
+
+//buatlah luas segitiga
+<?php
+$alas= 5;
+$tinggi=3;
+
+$luas = ($alas *$tinggi)/2;
+
+echo $luas;
+
+?>
+."<br>";
+
+//buatlah algoritma untuk menentukan kelulusan apabila nilai ujian akhir >75, dinyatakan lulus
+<?php
+
+$nilai=85;
+
+if ($nilai > 75){
+$keterangan = "lulus";
+}else{
+$keterangan = "tidak lulus";
+}
+
+echo $keterangan;
+?>
+."<br>";
+
+//tentukan ganjil dan genap %=sisa hasil bagi
+<?php
+$bilangan=6;
+
+$hasil=$bilangan%2;
+
+if ($hasil=0){
+$keterangan="genap";
+}else{
+$keterangan="ganjil";
+}
+echo $keterangan;
+?>
+."<br>";
+
+//jika belanja >500.000 diskon 10%
+//jika belanja <500.000 diskon 5%
+<?php
+$total_harga=575000;
+
+if (total_harga>500000){
+	$diskon= $total_harga*0.1;
+}else{
+	$diskon= $total_harga *0.05;
+}
+$total_pembayaran=$total_harga- $diskon;
+
+echo $total_pembayaran;
+?>
+."<br>";
+
+//tentukan member dan non member
+//member > 500.000 diskon 10 % jika < 500.000 diskon 5 %
+//non member >1.000.000 diskon 3% jika < 1.000.000 diskon 2 %
+<?php
+$total_harga =575000;
+$kondisi="member";
+
+if ($kondisi=="member"){
+	if ($total_harga >500000){
+	$diskon =$total_harga *0.1;
+	}else{
+	$diskon =$total_harga*0.05;
+	}
+}else{
+	if ($total_harga >1000000){
+	$diskon=$total_harga*0.03;
+	}else{
+	$diskon= $total_harga* 0.02;
+	}
+}
+$total_bayar=$total_harga-$diskon;
+echo $total_bayar;
+?> 
+."<br>";
+
+//jika belanja hari senin>10.000 mendapat bonus roti
+//jika belanja selain hari senin>10.000 mendapat bonus air mineral
+//jika belanja <10.000  tidak mendapat bonus 
+
+<?php
+$total_harga=12000;
+$hari ="senin";
+
+if ($hari == "senin"){
+	if ($total_harga>10000){
+	$bonus ="roti";
+	}else{
+	$bonus ="tidak mendapat bonus";
+	}
+}else{
+	if ($total_harga>10000){
+	$bonus ="air mineral";
+	}else{
+	$bonus ="tidak mendapat bonus";
+	}
+}
+echo"$bonus;
+?>
+."<br/>";
+
+//script program mencari luas bangun datar diantaranya :
+1. persegi 		(sisi*sisi)
+2. persegi panjang	(panjang *lebar)
+3. segitiga 		((alas*tinggi)/2)
+4. lingkaran	(3.14*r*r)
+5. jajar genjang	(alas*tinggi)
+
+<?php
+
+$status=1;
+
+if ($status==1){
+	$sisi=;
+	$luas=$sisi*$sisi;
+	echo "anda memilih mencari luas persegi";
+}elseif($status==2){
+	$panjang=;
+	$lebar=;
+	$luas=$panjang*$lebar;
+	echo "anda memilih mencari luas persegi panjang";
+}elseif ($status==3){
+	$alas=;
+	$tinggi=;
+	$luas=$alas*$tinggi;
+}elseif($status==4){
+	$r=;
+	$luas=3.14*$r*$r;
+}else{
+	$alas=;
+	$tinggi=;
+	$luas=$alas*$tinggi;
+}
+
+echo luas;
+?>
