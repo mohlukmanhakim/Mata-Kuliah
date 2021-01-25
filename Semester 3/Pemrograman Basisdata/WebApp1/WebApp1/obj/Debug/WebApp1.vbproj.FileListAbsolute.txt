@@ -1,0 +1,10 @@
+D:\201851050Lukman\WebApp1\WebApp1\bin\WebApp1.dll
+D:\201851050Lukman\WebApp1\WebApp1\bin\WebApp1.pdb
+D:\201851050Lukman\WebApp1\WebApp1\bin\WebApp1.xml
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\ResolveAssemblyReference.cache
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\WebApp1.Resources.resources
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\GenerateResource.read.1.tlog
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\GenerateResource.write.1.tlog
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\WebApp1.dll
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\WebApp1.xml
+D:\201851050Lukman\WebApp1\WebApp1\obj\Debug\WebApp1.pdb
