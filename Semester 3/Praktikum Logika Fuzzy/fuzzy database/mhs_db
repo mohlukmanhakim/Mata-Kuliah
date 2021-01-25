@@ -1,0 +1,127 @@
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`mhs_db` /*!40100
+DEFAULT CHARACTER SET latin1 */;
+
+USE `mhs_db`;
+
+DROP TABLE IF EXISTS `tb_mhs`;
+
+
+CREATE TABLE `tb_mhs` (
+`id` int(10) NOT NULL auto_increment,
+`nim` varchar(10) default NULL,
+`nama` varchar(50) default NULL,
+`ipk` varchar(4) default NULL,
+`absensi` tinyint(2) default NULL,
+`nilai_ta` tinyint(2) default NULL,
+`unggulan1` tinyint(2) default NULL,
+`unggulan2` tinyint(2) default NULL,
+`unggulan3` tinyint(2) default NULL,
+`unggulan4` tinyint(2) default NULL,
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM  AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tb_mhs` (
+`id` int(10) NOT NULL auto_increment,
+`nama` varchar(50) default NULL,
+`ipk` varchar(4) default NULL,
+`lama_kuliah` varchar(3) default NULL,
+`prestasi` tinyint(2) default NULL,
+`organisasi` tinyint(2) default NULL,
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM  AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+ insert into `tb_mhs`(`id`,`nama`,`ipk`,`absensi`,`nilai_ta`,`unggulan`) values 
+(1,'Andri Farista',	3.48,78,76,69),
+(2,'Cecep Hamdun',	2.82,77,77,57),
+(3,'Ali Murtadho',	3.39,81,81,73),
+(4,'Mukti Riandina',3.07,78,79,73),
+(5,'Adiyansyah',	3.70,89,83,68),
+(6,'Dina Susanti',	3.87,76,82,85),
+(7,'Rizky Habibi',	2.29,63,56,69),
+(8,'Hafifah Bella',	3.75,75,85,82),
+(9,'Nelvia Fitri',	3.50,75,85,70),
+(10,'Prabowo',		2.89,76,80,67);
+
+ insert into `tb_mhs`(`id`,`nama`,`ipk`,`lama_kuliah`,`prestasi`,`organisasi`) values 
+(1,'Andri Farista',3.48,4.0,6,2),
+(2,'Cecep Hamdun',2.82,3.5,1,4),
+(3,'Ali Murtadho',3.39,4.5,3,1),
+(4,'Mukti Riandina',3.07,4.5,3,5),
+(5,'Adiyansyah',3.70,5.0,2,3),
+(6,'Dina Susanti',3.87,5.0,5,6),
+(7,'Rizky Habibi',2.29,4.5,2,7),
+(8,'Hafifah Bella',3.75,4.0,7,2),
+(9,'Nelvia Fitri',3.50,3.5,2,3),
+(10,'Prabowo',2.89,4.5,4,6);
+
+DROP TABLE IF EXISTS `tb_kelompok`;
+
+CREATE TABLE `tb_kelompok` (
+`id` int(10) NOT NULL auto_increment,
+`nama_kelompok` varchar(25) default NULL,
+`field_akses` varchar(25) default NULL,
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+insert into `tb_kelompok`(`id`,`nama_kelompok`,`field_akses`)
+values 
+(1,'IPK','ipk'),
+(2,'Lama Kuliah','lama_kuliah'),
+(3,'Prestasi','prestasi'),
+(4,'Organisasi','organisasi');
+
+insert into `tb_kelompok`(`id`,`nama_kelompok`,`field_akses`)
+values 
+(1,'ipk','ipk'),
+(2,'absensi','absensi'),
+(3,'nilai_ta','nilai_ta'),
+(4,'unggulan','unggulan');
+
+DROP TABLE IF EXISTS `tb_kriteria`;
+
+CREATE TABLE `tb_kriteria` (
+`id` int(10) NOT NULL auto_increment,
+`nama_kriteria` varchar(30) default NULL,
+`bawah` float(10,2) default NULL,
+`tengah` float(10,2) default NULL,
+`atas` float(10,2) default NULL,
+`kelompok` tinyint(2) default NULL,
+`keterangan` varchar(100) default NULL,
+PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+insert into `tb_kriteria`(`id`,`nama_kriteria`,`bawah`,`tengah`,`atas`,`kelompok`,`keterangan`) 
+values 
+(1,'Memuaskan',2.74,2.74,2.88,1,NULL),
+(2,'Sangat Memuaskan',2.75,3.00,3.00,1,NULL),
+(3,'Terpuji',2.88,4.00,4.00,1,NULL),
+
+(4,'Cepat',3.0,4.0,4.0,2,NULL),
+(5,'Tepat',3.5,4.5,4.5,2,NULL),
+(6,'Lambat',4.0,5.0,5.0,2,NULL),
+
+(7,'Kurang',1,6,6,3,NULL),
+(8,'Cukup',3,9,9,3,NULL),
+(9,'Baik',6,9,9,3,NULL),
+
+(10,'Kurang',1,6,6,3,NULL),
+(11,'Cukup',3,9,9,3,NULL),
+(12,'Aktif',6,9,9,3,NULL);
+
+insert into `tb_kriteria`(`id`,`nama_kriteria`,`bawah`,`tengah`,`atas`,`kelompok`,`keterangan`) 
+values 
+(1,'Memuaskan',0,2.74,2.88,1,NULL),
+(2,'Sangat Memuaskan',2.75,2.88,3.00,1,NULL),
+(3,'Terpuji',2.88,3.00,4.00,1,NULL),
+
+(4,'Kurang',56,67,74,2,NULL),
+(5,'Baik',68,74,79,2,NULL),
+(6,'Amat Baik',74,100,120,2,NULL),
+
+(7,'Kurang',56,67,74,3,NULL),
+(8,'Baik',68,74,79,3,NULL),
+(9,'Amat Baik',74,100,120,3,NULL),
+
+(10,'Kurang',56,67,74,4,NULL),
+(11,'Baik',68,74,79,4,NULL),
+(12,'Amat Baik',74,100,120,4,NULL); 
