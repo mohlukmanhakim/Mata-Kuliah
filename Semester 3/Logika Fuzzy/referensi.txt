@@ -1,0 +1,5 @@
+> Sri Kusumadewi, Hari Purnomo, Aplikasi Logika Fuzzy untuk Pendukung Keputusan, Graha Ilmu
+> S. N. Sivanandam, S. Sumathi and S. N. Deepa, “Introduction to Fuzzy Logic using MATLAB”, 2007
+> Ahmad M. Ibrahim, “Fuzzy Logic for Embedded System Applications”, Elsevier, 2004
+> Kwang H. Lee, “First Course on Fuzzy Theory and Applications”, 2005
+> Sri Kusumadewi, “Fuzzy Multi Attribute Decision Making”, Graha Ilmu
