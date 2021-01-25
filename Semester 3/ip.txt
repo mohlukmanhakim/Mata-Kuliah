@@ -1,0 +1,2 @@
+dxdiag
+cmd >ipconfig
