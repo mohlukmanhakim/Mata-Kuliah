@@ -1,0 +1,56 @@
+//membuat database
+create database (name_database);
+
+//menampilkan semua basisdata
+show databases;
+
+//bekerja pd basisdata yang aktif
+use (name_database);
+
+//membuat table mskaryawan
+create table mskaryawan(
+    kdkaryawan char(5)not null primary key,
+    nama varchar(30)not null,
+    alamat varchar(50),
+    telpon varchar(13),
+    email varchar(20),
+    gaji numeric,
+    constraint a1 check (length(kdkaryawan)=5),
+    constraint a2 check (kdkaryawan like 'EN%'),
+    constraint a3 check (lenght(telpon)<13)
+
+);
+
+//membuat table mscustomer
+create table mscustomer(
+    kdcustomer char(5)not null primary key,
+    nama varchar(30),
+    alamat varchar(50),
+    telpon varchar(13),
+    email varchar(25),
+    constraint b1 check (length(kdcustomer)=5),
+    constraint b2 check (kdcustomer like 'KC%'),
+    constraint b3 check (lenght(telpon)<13)
+);
+
+//menampilkan semua table di database
+show tables;
+
+//membuat table msjenisbuku
+create table msjenis_buku(
+    kdjenisbuku char(5)not null primary key,
+    jenisbuku varchar(25)not null,
+    hargasewa numeric
+    constraint c1 check(lenght(kdjenisbuku)=5),
+    constraint c2 check(kdjenisbuku like 'KJ%')
+    
+);
+
+//membuat table msbuku
+create table msbuku(
+    kdbuku char(5)not null primary key,
+    judul varchar(50),
+    kdjenisbuku char(5),
+    constraint d1 check(lenght(kdbuku)=5),
+    constraint d2 check(kdbuku like 'KB%')
+);
