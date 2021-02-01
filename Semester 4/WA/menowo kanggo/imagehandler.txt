@@ -1,0 +1,35 @@
+Dim koneksi As New SqlConnection("integrated security=sspi;data source=localhost;initial catalog=jastip")
+        Dim sqlCmd As New SqlCommand()
+        sqlCmd.CommandText = "select Gambar from customer where ID = @IdCs"
+        sqlCmd.CommandType = Data.CommandType.Text
+        sqlCmd.Connection = koneksi
+
+        Dim IdCs As New SqlParameter("@IdCs", Data.SqlDbType.NVarChar)
+        IdCs.Value = context.Request.QueryString("ID")
+        sqlCmd.Parameters.Add(IdCs)
+
+        koneksi.Open()
+        Dim SqlReader As SqlDataReader = sqlCmd.ExecuteReader()
+        SqlReader.Read()
+        context.Response.BinaryWrite(CType(SqlReader("Gambar"), Byte()))
+        SqlReader.Close()
+
+        koneksi.Close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Dim id As String = tbIdCs.Text
+            Image1.ImageUrl = "imagehandler.ashx?ID=" & id

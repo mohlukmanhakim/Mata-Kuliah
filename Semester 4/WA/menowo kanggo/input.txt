@@ -1,0 +1,74 @@
+Dim koneksi As New SqlConnection("integrated security=sspi;data source=localhost;initial catalog=jastip")
+        koneksi.Open()
+        Dim id = tbIdCs.Text
+        Dim cari As String = "select * from customer where ID= '" & id & "' "
+        Dim command As New SqlCommand(cari, koneksi)
+        Dim reader As SqlDataReader = command.ExecuteReader
+        If reader.Read() Then
+            MsgBox("Data sudah ada")
+            reader.Close()
+
+        Else
+            koneksi.Close()
+
+            If (Not FileUpload1.PostedFile Is Nothing) AndAlso (FileUpload1.PostedFile.FileName <> "") Then
+                Dim buffer(FileUpload1.PostedFile.ContentLength) As Byte
+                Dim postFile As HttpPostedFile = FileUpload1.PostedFile
+                postFile.InputStream.Read(buffer, 0, CInt(FileUpload1.PostedFile.ContentLength))
+
+                Dim sqlCommand As New SqlCommand()
+                sqlCommand.CommandText = "insert into customer(ID, Nama, Jekel, Alamat, Domisili, Telfon, NamaGambar, Gambar, Ukuran, Tipe)" & _
+                                  " VALUES (@IdCs, @Nama, @Jekel, @Alamat, @Domisili, @Telfon, @NamaGambar, @Gambar, @Ukuran, @Tipe)"
+                sqlCommand.CommandType = CommandType.Text
+                sqlCommand.Connection = koneksi
+
+                Dim IdCs As New SqlParameter("@IdCs", SqlDbType.NVarChar, 50)
+                IdCs.Value = tbIdCs.Text
+                sqlCommand.Parameters.Add(IdCs)
+
+                Dim Nama As New SqlParameter("@Nama", SqlDbType.NVarChar, 100)
+                Nama.Value = tbNamaCs.Text
+                sqlCommand.Parameters.Add(Nama)
+
+                Dim Jekel As New SqlParameter("@Jekel", SqlDbType.NVarChar, 20)
+                Jekel.Value = rbJekelCs.Text
+                sqlCommand.Parameters.Add(Jekel)
+
+                Dim Alamat As New SqlParameter("@Alamat", SqlDbType.NVarChar, 100)
+                Alamat.Value = tbAlamatCs.Text
+                sqlCommand.Parameters.Add(Alamat)
+
+                Dim Domisili As New SqlParameter("@Domisili", SqlDbType.NVarChar, 50)
+                Domisili.Value = tbDomisiliCs.Text
+                sqlCommand.Parameters.Add(Domisili)
+
+                Dim Telfon As New SqlParameter("@Telfon", SqlDbType.NVarChar, 50)
+                Telfon.Value = tbNoCs.Text
+                sqlCommand.Parameters.Add(Telfon)
+
+                Dim NamaGambar As New SqlParameter("@NamaGambar", SqlDbType.NVarChar, 200)
+                NamaGambar.Value = FileUpload1.PostedFile.FileName
+                sqlCommand.Parameters.Add(NamaGambar)
+
+                Dim Gambar As New SqlParameter("@Gambar", SqlDbType.Image, buffer.Length)
+                Gambar.Value = buffer
+                sqlCommand.Parameters.Add(Gambar)
+
+                Dim Ukuran As New SqlParameter("@Ukuran", SqlDbType.BigInt, 99999)
+                Ukuran.Value = FileUpload1.PostedFile.ContentLength
+                sqlCommand.Parameters.Add(Ukuran)
+
+                Dim Tipe As New SqlParameter("@Tipe", SqlDbType.NVarChar, 200)
+                Tipe.Value = FileUpload1.PostedFile.ContentType
+                sqlCommand.Parameters.Add(Tipe)
+
+                koneksi.Open()
+                sqlCommand.ExecuteNonQuery()
+                koneksi.Close()
+            End If
+
+            clear()
+
+            Tampil()
+
+        End If

@@ -1,0 +1,83 @@
+<string-array name="kategori_namakategori">
+        <item>Nama Event 1</item>
+        <item>Nama EVent 2</item>
+        <item>Nama Event 3</item>
+        <item>Nama Event 4</item>
+        <item>Nama Event 5</item>
+        <item>Nama Event 6</item>
+    </string-array>
+
+    <array name="poster_kategori_namakategori">
+        <item>
+            Link gambar 1
+        </item>
+        <item>
+            Link gambar 2
+        </item>
+        <item>
+            Link gambar 3
+        </item>
+        <item>
+            Link gambar 4
+        </item>
+        <item>
+            Link gambar 5
+        </item>
+        <item>
+            Link gambar 6
+        </item>
+    </array>
+
+    <array name="location_kategori_namakategori">
+        <item>Lokasi 1</item>
+        <item>Lokasi 2</item>
+        <item>Lokasi 3</item>
+        <item>Lokasi 4</item>
+        <item>Lokasi 5</item>
+        <item>Lokasi 6</item>
+    </array>
+
+    <array name="htm_kategori_namakategori">
+        <item>Free atau "Angka"</item>
+        <item>Free atau "Angka"</item>
+        <item>Free atau "Angka"</item>
+        <item>Free atau "Angka"</item>
+        <item>Free atau "Angka"</item>
+        <item>Free atau "Angka"</item>
+    </array>
+
+    <array name="kuota_kategori_namakategori">
+        <item>80 Orang</item>
+        <item>100 Orang</item>
+        <item>Unlimited</item>
+        <item>70 Orang</item>
+        <item>Unlimited</item>
+        <item>Unlimited</item>
+    </array>
+
+    <array name="date_kategori_namakategori">
+        <item>17 Oktober 2019</item>
+        <item>23 Desember 2019</item>
+        <item>21 Desember 2019</item>
+        <item>11 November 2019</item>
+        <item>15 November 2019</item>
+        <item>31 Deesmber 2019</item>
+    </array>
+
+    <array name="eventby_kategori_namakategori">
+        <item>Himapro</item>
+        <item>Papercom Indonesia</item>
+        <item>Pemerintah Kab.Pati</item>
+        <item>Universitas Semarang</item>
+        <item>IAIN Kudus</item>
+        <item>Komunitas</item>
+    </array>
+
+    <array name="desc_kategori_namakategori">
+        <item>Deskripsi 1</item>
+        <item>Deskripsi 2</item>
+        <item>Deskripsi 3</item>
+        <item>Deskripsi 4</item>
+        <item>Deskripsi 5</item>
+        <item>Deskripsi 6</item>
+    </array>
